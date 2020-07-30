@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painter</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <canvas id="myCanvas" class="canvas"></canvas>
+    <section class="control_area">
+      <!-- slider -->
+      <input
+        id="mySlider"
+        type="range"
+        id="myRange"
+        min="0.1"
+        max="10"
+        value="2.5"
+        step="0.1"
+      />
+
+      <!-- buttons -->
+      <div class="btn_controls">
+        <button id="mode" class="clicky" data-mode="Stroke">Fill</button>
+        <div class="clicky">
+          <a id="down">Save</a>
+        </div>
+      </div>
+
+      <!-- colors -->
+      <div id="myColors" class="color_controls">
+        <div class="colors" data-color="#2c2c2c"></div>
+        <div class="colors" data-color="#fff"></div>
+        <div class="colors" data-color="#ff3b30"></div>
+        <div class="colors" data-color="#ff9500"></div>
+        <div class="colors" data-color="#ffcc00"></div>
+        <div class="colors" data-color="#4cd95d"></div>
+        <div class="colors" data-color="#5ac8fa"></div>
+        <div class="colors" data-color="#0579ff"></div>
+        <div class="colors" data-color="#5857df"></div>
+      </div>
+
+      <div id="myHandle" class="btn_handle"></div>
+    </section>
+
+    <section id="myModal" class="modal">
+      <label for="q1">Enter File Name</label>
+      <input type="text" id="q1" />
+      <div class="modal_btn">
+        <button id="confirm">
+          <a>
+            Confirm
+          </a>
+        </button>
+        <button id="back">Cancel</button>
+      </div>
+    </section>
+  </body>
+</html>
